@@ -1,0 +1,41 @@
+PS C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01\a.exe...done.
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01/a.exe       
+[New Thread 22412.0x6ec8]
+[New Thread 22412.0x8184]
+Enter a number: 3
+Enter a number: 56
+Sum of 3 and 56 is 59
+[Inferior 1 (process 22412) exited normally]
+(gdb) b 18
+Breakpoint 1 at 0x4014cf: file problem03.c, line 18.
+(gdb) b 10
+Breakpoint 2 at 0x40148d: file problem03.c, line 10.
+(gdb) b main
+Note: breakpoint 1 also set at pc 0x4014cf.
+Breakpoint 3 at 0x4014cf: file problem03.c, line 20.
+(gdb) n
+The program is not being run.
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01/a.exe       
+[New Thread 30912.0x5c78]
+[New Thread 30912.0x4374]
+
+Breakpoint 1, main () at problem03.c:20
+20          num1 = input();
+(gdb) quit
+A debugging session is active.
+
+        Inferior 1 [process 30912] will be killed.
+
+Quit anyway? (y or n) y
