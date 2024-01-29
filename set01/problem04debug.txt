@@ -1,0 +1,21 @@
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01/a.exe       
+[New Thread 9812.0x1f60]
+[New Thread 9812.0x6e84]
+Enter two numbers: 34
+44
+Sum of 34 and 44 is: 78
+[Inferior 1 (process 9812) exited normally]
+(gdb) b 16
+Breakpoint 1 at 0x4014da: file problem04.c, line 16.
+(gdb) b 1
+Breakpoint 2 at 0x401466: file problem04.c, line 1.
+(gdb) b 12
+Breakpoint 3 at 0x4014a8: file problem04.c, line 12.
+(gdb) b 8
+Breakpoint 4 at 0x401492: file problem04.c, line 8.
+(gdb) b 3
+Note: breakpoint 2 also set at pc 0x401466.
+Breakpoint 5 at 0x401466: file problem04.c, line 3.
+(gdb) n
+The program is not being run.
+(gdb) quit
