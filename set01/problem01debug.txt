@@ -1,0 +1,11 @@
+Breakpoint 1, main () at problem01.c:4
+4           printf("my name is Lavanya");
+(gdb) b main
+Note: breakpoint 1 also set at pc 0x40146e.
+Breakpoint 2 at 0x40146e: file problem01.c, line 4.
+(gdb) b 4
+Note: breakpoints 1 and 2 also set at pc 0x40146e.
+Breakpoint 3 at 0x40146e: file problem01.c, line 4.
+(gdb) n
+my name is Lavanya5         return 0;
+(gdb) n
