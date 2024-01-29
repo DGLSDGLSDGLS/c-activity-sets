@@ -1,0 +1,72 @@
+Reading symbols from C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01\a.exe...done.
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01/a.exe
+[New Thread 11432.0x6474]
+[New Thread 11432.0x8a64]
+enter number to add: 3
+enter number to add: 3
+the sum id 6[Inferior 1 (process 11432) exited normally]
+(gdb) b main
+Breakpoint 1 at 0x4014c7: file problem02.c, line 20.
+(gdb) b24
+Undefined command: "b24".  Try "help".
+(gdb) b 4
+Breakpoint 2 at 0x401466: file problem02.c, line 4.
+(gdb) b 24
+Breakpoint 3 at 0x4014f9: file problem02.c, line 24.
+(gdb) n
+The program is not being run.
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01/a.exe
+[New Thread 22188.0x8e84]
+[New Thread 22188.0x7918]
+
+Breakpoint 1, main () at problem02.c:20
+20          a=input();
+(gdb) n
+
+Breakpoint 2, input () at problem02.c:4
+4           printf("enter number to add: ");
+(gdb) b main
+Note: breakpoint 1 also set at pc 0x4014c7.
+Breakpoint 4 at 0x4014c7: file problem02.c, line 20.
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) n
+Program not restarted.
+(gdb) quit
+A debugging session is active.
+
+        Inferior 1 [process 22188] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+PS C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01> gcc -g -O0 problem02.c -o problem02.exe
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file problem02.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+PS C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01> git add .
+PS C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01> git commit -m "test"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01> git config --global user.email "dlavanya.bsc23@rvu.edu.in"
+PS C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01> git config --global user.name "D Lavanya"
+PS C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01> git commit -m "test"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01> git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 802 bytes | 802.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/DGLSDGLSDGLS/c-activity-sets.git
+   abdfd0b..091c811  main -> main
+PS C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01>
