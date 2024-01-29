@@ -1,0 +1,15 @@
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01/a.exe       
+[New Thread 19628.0x3a3c]
+[New Thread 19628.0x32a0]
+Enter a number: 45
+Enter a number: 34
+Enter a number: 56
+Numbers entered: 45, 34, 56
+The largest number is: 56
+[Inferior 1 (process 19628) exited normally]
+(gdb) b main
+Breakpoint 1 at 0x401507: file problem05.c, line 26.
+(gdb) n
+The program is not being run.
+(gdb) quit
