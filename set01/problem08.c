@@ -11,7 +11,7 @@ void input_arr(int n, int a[n]){
     int i;
     for(i=0;i<n;i++){
         printf("enter number");
-        scanf("%d",a[i]);
+        scanf("%d",&a[i]);
     }
 }
 
