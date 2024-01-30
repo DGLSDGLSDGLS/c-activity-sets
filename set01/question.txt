@@ -1,0 +1,7 @@
+Q1) what is b main in gdb?
+=> b main is breakpoint for the main function.
+
+Q2) how to delete a commit ?
+=> 
+
+Q3) 
