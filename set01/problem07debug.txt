@@ -1,0 +1,29 @@
+PS C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01\a.exe...done.
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01/a.exe       
+[New Thread 32956.0x2108]
+[New Thread 32956.0x7504]
+till how many numbers you want to find the sum? 10
+the sum is 55
+[Inferior 1 (process 32956) exited normally]
+(gdb) b main
+Breakpoint 1 at 0x4014e1: file problem07.c, line 25.
+(gdb) b 19
+Breakpoint 2 at 0x4014bd: file problem07.c, line 19.
+(gdb) b 10
+Breakpoint 3 at 0x401490: file problem07.c, line 10.
+(gdb) b 3
+Breakpoint 4 at 0x401466: file problem07.c, line 3.
+(gdb) n
+The program is not being run.
+(gdb) quit
