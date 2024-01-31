@@ -1,0 +1,20 @@
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01/a.exe       
+[New Thread 6936.0x47d0]
+[New Thread 6936.0x5528]
+enter 1st string: helloo
+enter 2nd string: helllo
+helloo is bigger than helllo[Inferior 1 (process 6936) exited normally]
+(gdb) n
+The program is not being run.
+(gdb) b main
+Breakpoint 1 at 0x4015a0: file problem10.c, line 36.
+(gdb) b 3
+Breakpoint 2 at 0x401466: file problem10.c, line 3.
+(gdb) b 10
+Breakpoint 3 at 0x4014ad: file problem10.c, line 10.
+(gdb) b 20
+Breakpoint 4 at 0x40153c: file problem10.c, line 20.
+(gdb) n
+The program is not being run.
+(gdb) quit
