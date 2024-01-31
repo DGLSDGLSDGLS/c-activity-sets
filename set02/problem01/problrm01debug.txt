@@ -1,0 +1,19 @@
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set02/a.exe       
+[New Thread 24712.0x59d8]
+[New Thread 24712.0x6f9c]
+enter the base of the triangle: 10
+enter the height of the triangle: 8
+the area of the traingle is 40.000000
+[Inferior 1 (process 24712) exited normally]
+(gdb) b main
+Breakpoint 1 at 0x4014f5: file problem01.c, line 22.
+(gdb) b 5
+Breakpoint 2 at 0x401466: file problem01.c, line 5.
+(gdb) b 12
+Breakpoint 3 at 0x4014ad: file problem01.c, line 12.
+(gdb) b 16
+Breakpoint 4 at 0x4014d1: file problem01.c, line 16.
+(gdb) n
+The program is not being run.
+(gdb) quit
