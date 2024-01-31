@@ -19,10 +19,10 @@ int comp(char *str1,char *str2){
    
 void output(char *str1, char *str2,int result){
     if (result<0){
-        printf("%s is bigger than %s",str1,str2);
+        printf("%s is bigger than %s",str2,str1);
     }
     else if(result>0){
-        printf("%s is bigger than %s",str2,str1);
+        printf("%s is bigger than %s",str1,str2);
     }
     else{
         printf("both the strings are equal");
