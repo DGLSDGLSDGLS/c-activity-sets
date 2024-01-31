@@ -1,0 +1,23 @@
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01/a.exe       
+[New Thread 19424.0x307c]
+[New Thread 19424.0x5974]
+enter real number: 5
+enter the imaginary part: 3
+enter real number: 7
+enter the imaginary part: 9
+the sum od 12.000000+12.000000i[Inferior 1 (process 19424) exited normally]
+(gdb) b main
+Breakpoint 1 at 0x401506: file problem11.c, line 30.
+(gdb) b 2
+Breakpoint 2 at 0x401466: file problem11.c, line 2.
+(gdb) b 9
+Note: breakpoint 2 also set at pc 0x401466.
+Breakpoint 3 at 0x401466: file problem11.c, line 9.
+(gdb) b 18
+Breakpoint 4 at 0x4014b5: file problem11.c, line 18.
+(gdb) b 24
+Breakpoint 5 at 0x4014d9: file problem11.c, line 24.
+(gdb) n
+The program is not being run.
+(gdb) quit
