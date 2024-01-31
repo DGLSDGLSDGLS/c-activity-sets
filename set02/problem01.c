@@ -10,7 +10,7 @@ void input(float *base,float *height){
 }
 
 void areaa(float base, float height,float *area){
-    *area=base*height;
+    *area=0.5*base*height;
 }
 
 void output(float area){
