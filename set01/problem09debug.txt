@@ -1,0 +1,12 @@
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set01/a.exe       
+[New Thread 16456.0x50e8]
+enter number to find its square root: [New Thread 16456.0x54c4]
+54
+the square root of the number 54.00 is 7.35
+[Inferior 1 (process 16456) exited normally]
+(gdb) b main
+Breakpoint 1 at 0x4014f5: file problem09.c, line 25.
+(gdb) n
+The program is not being run.
+(gdb) quit
