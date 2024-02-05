@@ -1,0 +1,18 @@
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set02/a.exe 
+[New Thread 7804.0x66f0]
+[New Thread 7804.0x556c]
+enter number: 60
+enter number: 48
+the hcf is 12[Inferior 1 (process 7804) exited normally]
+(gdb) b main
+Breakpoint 1 at 0x4014dd: file problem05.c, line 28.
+(gdb) b 5
+Breakpoint 2 at 0x401466: file problem05.c, line 5.
+(gdb) b 12
+Breakpoint 3 at 0x401490: file problem05.c, line 12.
+(gdb) b 22
+Breakpoint 4 at 0x4014b9: file problem05.c, line 22.
+(gdb) n
+The program is not being run.
+(gdb) quit
