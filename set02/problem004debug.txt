@@ -1,0 +1,14 @@
+ r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set02/a.exe       
+[New Thread 29212.0x1cc0]
+[New Thread 29212.0x66d0]
+enter how many number you want to enter in total: 3
+enter a number: 47
+enter a number: 45
+enter a number: 58
+the sum of all compsite number entered is 103[Inferior 1 (process 29212) exited normally]   
+(gdb) n
+The program is not being run.
+(gdb) b main
+Breakpoint 1 at 0x40159c: file problem04.c, line 44.
+(gdb) quit
