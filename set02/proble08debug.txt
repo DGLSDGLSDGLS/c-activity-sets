@@ -1,0 +1,38 @@
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set02/a.exe       
+[New Thread 25404.0x348c]
+[New Thread 25404.0x3c88]
+Enter the number of triangles: 3
+Enter the height of the triangle: 6
+Enter the base of the triangle: 5 
+Enter the height of the triangle: 9
+Enter the base of the triangle: 2
+Enter the height of the triangle: 8
+Enter the base of the triangle: 8
+Triangle with smallest area is 9.000000[Inferior 1 (process 25404) exited normally]
+(gdb) b main
+Breakpoint 1 at 0x401636: file problem08.c, line 52.
+(gdb) b 4
+Breakpoint 2 at 0x401466: file problem08.c, line 4.
+(gdb) b 9
+Note: breakpoint 2 also set at pc 0x401466.
+Breakpoint 3 at 0x401466: file problem08.c, line 9.
+(gdb) b 11
+Note: breakpoints 2 and 3 also set at pc 0x401466.
+Breakpoint 4 at 0x401466: file problem08.c, line 11.
+(gdb) b 18
+Breakpoint 5 at 0x401490: file problem08.c, line 18.
+(gdb) b 27
+Breakpoint 6 at 0x4014f1: file problem08.c, line 27.
+(gdb) b 33
+Breakpoint 7 at 0x401543: file problem08.c, line 33.
+(gdb) b 38
+Breakpoint 8 at 0x40157b: file problem08.c, line 38.
+(gdb) b 48
+Breakpoint 9 at 0x401607: file problem08.c, line 48.
+(gdb) b 52
+Note: breakpoint 1 also set at pc 0x401636.
+Breakpoint 10 at 0x401636: file problem08.c, line 52.
+(gdb) n
+The program is not being run.
+(gdb) quit
