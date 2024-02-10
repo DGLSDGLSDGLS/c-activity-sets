@@ -1,0 +1,24 @@
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set03/a.exe       
+[New Thread 12664.0x2f98]
+[New Thread 12664.0x7658]
+enter x1 2
+entrer y1 8
+enter x2 2
+enter y2 7
+enter x3 2
+enter y3 6
+it is not a triangle[Inferior 1 (process 12664) exited normally]
+(gdb) b main
+Breakpoint 1 at 0x4015d3: file problem02.c, line 37.
+(gdb) b4
+Undefined command: "b4".  Try "help".
+(gdb) b 4
+Breakpoint 2 at 0x401466: file problem02.c, line 4.
+(gdb) b 19
+Breakpoint 3 at 0x401526: file problem02.c, line 19.
+(gdb) b 26
+Breakpoint 4 at 0x4015a2: file problem02.c, line 26.
+(gdb) n
+The program is not being run.
+(gdb) quit
