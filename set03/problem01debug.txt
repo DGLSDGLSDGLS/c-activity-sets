@@ -1,0 +1,20 @@
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set03/a.exe       
+[New Thread 19516.0x1504]
+[New Thread 19516.0x5114]
+enter x1 5
+entrer y1 8
+enter x2 4
+enter y2 6
+the distance is 2.236068[Inferior 1 (process 19516) exited normally]
+(gdb) b main
+Breakpoint 1 at 0x401567: file problem01.c, line 34.
+(gdb) b 5
+Breakpoint 2 at 0x401466: file problem01.c, line 5.
+(gdb) b 16
+Breakpoint 3 at 0x4014eb: file problem01.c, line 16.
+(gdb) b 28
+Breakpoint 4 at 0x401543: file problem01.c, line 28.
+(gdb) n
+The program is not being run.
+(gdb) quit
