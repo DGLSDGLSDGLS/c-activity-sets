@@ -1,0 +1,23 @@
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set03/a.exe       
+[New Thread 16124.0x6ea0]
+[New Thread 16124.0x570c]
+enter number to find nth number in fibonacci sequence: 14
+the nth fibo is 233[Inferior 1 (process 16124) exited normally]
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set03/a.exe       
+[New Thread 9032.0x60f8]
+[New Thread 9032.0x59e4]
+enter number to find nth number in fibonacci sequence: 6
+the nth fibo is 5[Inferior 1 (process 9032) exited normally]
+(gdb) b main
+Breakpoint 1 at 0x4014f9: file problem04.c, line 30.
+(gdb) b 4
+Breakpoint 2 at 0x401466: file problem04.c, line 4.
+(gdb) b 11
+Breakpoint 3 at 0x401490: file problem04.c, line 11.
+(gdb) b 24
+Breakpoint 4 at 0x4014d5: file problem04.c, line 24.
+(gdb) n
+The program is not being run.
+(gdb) q
