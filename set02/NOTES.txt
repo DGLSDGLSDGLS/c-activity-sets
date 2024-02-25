@@ -1,0 +1,37 @@
+//Write a program to reverse a string.
+#include<stdio.h>
+#include<stdlib.h>
+void input(char *a){
+    printf("enter a string: ");
+    scanf("%s",a);
+}
+
+int len(char *a){
+    int i;
+    for(i=0;a[i]!='\0';i++);
+    return i;
+}
+
+void reverse(char *a,char *rev_a){
+    int i,j,l;
+    l=len(a);
+    for(j=0,i=l-1;a[i]!='\0';j++){
+        //i=i-1;          this was a very big mistake
+        rev_a[j]=a[i];
+        i=i-1;
+    }
+    rev_a[j]='\0';
+}
+
+void output(char *rev_a){
+    printf("the reversed string is %s",rev_a);
+}
+
+int main(){
+    char a[100];
+    input(a);
+    char a_rev[100];
+    reverse(a,a_rev);
+    output(a_rev);
+    return 0;
+}
