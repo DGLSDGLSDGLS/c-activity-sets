@@ -1,0 +1,22 @@
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set03/a.exe    
+[New Thread 27940.0x2970]
+pls enter a number: 250
+pls enter a number: 250
+pls enter a number: 250
+2       3       5       7       11      13      17      19      23      29      31      37       41      43      47      53      59      61      67      71      73      79      83       89      97      101     103     107     109     113     127     131     137     139      149     151     157     163     167     173     179     181     191     193     197      199     211     223     227     229     233     239     241     [Inferior 1 (process 27940) exited normally]
+(gdb) n
+The program is not being run.
+(gdb) b main
+Breakpoint 1 at 0x401604: file problem05.c, line 34.
+(gdb) b 3
+Breakpoint 2 at 0x401466: file problem05.c, line 3.
+(gdb) b 10
+Breakpoint 3 at 0x401490: file problem05.c, line 10.
+(gdb) b 17
+Breakpoint 4 at 0x4014d6: file problem05.c, line 17.
+(gdb) b 26
+Breakpoint 5 at 0x401591: file problem05.c, line 26.
+(gdb) n
+The program is not being run.
+(gdb) q

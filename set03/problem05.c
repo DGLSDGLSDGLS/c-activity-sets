@@ -18,7 +18,7 @@ void erotosthenes_sieve(int n, int a[n]){
   for(int i=0;a[i]<n;i++){
     for(int j=3;j<sqrt(a[i])+1;j+=2){    //j=3 is very important
       if(a[i]%j==0 && a[i]!=j){
-        a[i]=0;                  // main condition for all nested loops
+        a[i]=0;                  // main condition for the loops
       }
     }
   }
@@ -26,8 +26,8 @@ void erotosthenes_sieve(int n, int a[n]){
 void output(int n, int a[]){
   for(int i=0;a[i]<n;i++){   // read answer from the top function 
     if(a[i]!=0){             // if the element is 0 then it is a composite number,but we need to find prime number
-      printf("%d\t",a[i]);   // now printing the number
-    }
+      printf("%d\t",a[i]);   // now printing the numbe;; we have given composite number as 0 in the above function.
+    }                      //so printing the values which are not 0 are the prime numbers.
     
   }
 }

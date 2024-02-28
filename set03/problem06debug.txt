@@ -1,0 +1,18 @@
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set03/a.exe
+[New Thread 45356.0x1ff8]
+[New Thread 45356.0x354c]
+enter a string: hellooooo
+enter substring: looo
+the substring index is 3[Inferior 1 (process 45356) exited normally]
+(gdb) b main
+Breakpoint 1 at 0x40156f: file problem06.c, line 48.
+(gdb) b 10
+Breakpoint 2 at 0x401466: file problem06.c, line 10.
+(gdb) b 17
+Breakpoint 3 at 0x4014ad: file problem06.c, line 17.
+(gdb) b 37
+Breakpoint 4 at 0x401534: file problem06.c, line 37.
+(gdb) n
+The program is not being run.
+(gdb) q
