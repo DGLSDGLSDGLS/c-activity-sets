@@ -1,0 +1,30 @@
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set03/a.exe
+[New Thread 42324.0x3010]
+[New Thread 42324.0x884c]
+enter coordinates of 1st line: enter x: 3
+enter y: 2
+enter coordinates of 2nd line: enter x: 6
+enter y: 8
+the length of the line is 6.708204[Inferior 1 (process 42324) exited normally]
+(gdb) n
+The program is not being run.
+(gdb) b main
+Breakpoint 1 at 0x40157e: file problem07.c, line 49.
+(gdb) b 7
+Breakpoint 2 at 0x401466: file problem07.c, line 7.
+(gdb) b 12
+Note: breakpoint 2 also set at pc 0x401466.
+Breakpoint 3 at 0x401466: file problem07.c, line 12.
+(gdb) b 18
+Note: breakpoints 2 and 3 also set at pc 0x401466.
+Breakpoint 4 at 0x401466: file problem07.c, line 18.
+(gdb) b 27
+Breakpoint 5 at 0x4014b5: file problem07.c, line 27.
+(gdb) b 36
+Breakpoint 6 at 0x40150e: file problem07.c, line 36.
+(gdb) b 43
+Breakpoint 7 at 0x40155a: file problem07.c, line 43.
+(gdb) n
+The program is not being run.
+(gdb) q
