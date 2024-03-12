@@ -1,40 +1,48 @@
-#include <stdio.h>
-#include <math.h>
+#include<stdio.h>
+#include<math.h>
+
 int input(){
-  printf("pls enter a number: ");
-  int x;
-  scanf("%d",&x);
-  return x;
+    int n;
+    printf("enter number : ");
+    scanf("%d",&n);
+    return n;
 }
 
-void init_array(int n, int a[]){       //all the odd numbers because anyways all the even numbers are divisible by 2
-  a[0]=2;
-  for(int i=1,j=3;j<=n;i++,j+=2){
-    a[i]=j;
-  }
-}
-
-void erotosthenes_sieve(int n, int a[n]){
-  for(int i=0;a[i]<n;i++){
-    for(int j=3;j<sqrt(a[i])+1;j+=2){    //j=3 is very important
-      if(a[i]%j==0 && a[i]!=j){
-        a[i]=0;                  // main condition for the loops
-      }
+void init(int n,int a[n]){
+    int i;
+    for(i=0;i<n;i++){
+        a[i] = i;
     }
-  }
 }
-void output(int n, int a[]){
-  for(int i=0;a[i]<n;i++){   // read answer from the top function 
-    if(a[i]!=0){             // if the element is 0 then it is a composite number,but we need to find prime number
-      printf("%d\t",a[i]);   // now printing the numbe;; we have given composite number as 0 in the above function.
-    }                      //so printing the values which are not 0 are the prime numbers.
+
+void es(int n,int a[n]){
+    int i,j;
+    a[0]=2;
+    for(i=2;i<n;i++){
+        for(j=2;j<=sqrt(i);j++){
+           if(a[i]%j==0){
+               a[i]=0;
+           }
+        }
+    }
+}
     
-  }
+void output(int n,int a[n]){
+    int i;
+    for(i=2;i<n;i++){
+        if(a[i]!=0){
+            printf("%d\t",a[i]);
+        }
+    }
 }
+
 int main(){
-  int n=input();
-  int a[n];
-  init_array(n,a);
-  erotosthenes_sieve(n,a);
-  output(n,a);
+    int n;
+    n=input();
+    //init(a);
+    int a[n];
+    init(n,a);
+    es(n,a);
+    output(n,a);
+    return 0;
 }
