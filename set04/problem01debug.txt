@@ -18,3 +18,18 @@ Breakpoint 4 at 0x401516: file problem01.c, line 20.
 (gdb) n
 The program is not being run.
 (gdb) q
+
+(gdb) r
+Starting program: C:\Users\lavan\OneDrive\Desktop\psc new\c-activity-sets\set04/a.exe
+[New Thread 25560.0x2b5c]
+[New Thread 25560.0x77e8]
+enter 1st numerator: 2
+enter 1st denominator: 35
+enter 2nd number: 78
+enter 2nd denominator: 45
+the sum of two fractions is 188/105[Inferior 1 (process 25560) exited normally]
+(gdb) b main
+Breakpoint 1 at 0x4015ae: file problem01.c, line 43.
+(gdb) n
+The program is not being run.
+(gdb) q
